@@ -101,10 +101,6 @@ nav {
 	background-color: #aaaaaa;
 }
 
-nav + a {
-	font-size: 3em;
-}
-
 section {
 	margin: 20px 0;
 }
@@ -127,33 +123,42 @@ section {
 	justify-content: center;
 }
 
-ul, li {
+nav ul, nav ul li {
 	display: flex;
 	text-align: center;
 }
 
-ul {
+nav ul {
 	width: 80%;
 	align-items: center
 }
 
-li {
+nav ul li {
 	margin-right: 10%;
 }
 
-a {
+li a {
 	text-decoration: none;
 	color: #cccccc;
 	text-align: inherit;
 }
 
-a:hover {
+li a:hover {
 	color: #000000;
+}
+
+.active {
+	color: #666666
+}
+
+nav > a {
+	display: flex;
+	width: 15%;
 }
 
 .logo {
 	display: flex;
-	max-width: 15%;
+	max-width: 100%;
 }
 
 h1 {
@@ -216,10 +221,9 @@ button {
 .bullet {
 	margin-top: 20px;
 	list-style-type: square;
+	list-style-position: inside;
 }
 .bullet, .bullet-item {
-	display: block;
-	
 	text-align: left;
 }
 
