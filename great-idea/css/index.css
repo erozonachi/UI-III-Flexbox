@@ -101,6 +101,10 @@ nav {
 	background-color: #aaaaaa;
 }
 
+nav + a {
+	font-size: 3em;
+}
+
 section {
 	margin: 20px 0;
 }
@@ -185,9 +189,45 @@ button {
 	width: 33%;
 }
 
-.middle-img {
+.banner {
 	display: block;
 	width: 100%;
+}
+
+.service-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	background-color: #eeeeee;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.service-btn {
+	margin: 20px 0;
+	width: 40%;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 10px 0;
+	font-size: 100%;
+	cursor: pointer;
+}
+.bullet {
+	margin-top: 20px;
+	list-style-type: square;
+}
+.bullet, .bullet-item {
+	display: block;
+	
+	text-align: left;
+}
+
+
+
+.bullet-item {
+	margin-right: 0;
+	padding: 7px 0;
 }
 
 footer {
