@@ -64,3 +64,138 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 100px;
+}
+
+.container {
+	display: flex;
+	max-width: 100%;
+	align-content: center;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.stack {
+	flex-direction: column;
+}
+
+nav {
+	justify-content: space-between;
+	padding: 20px 5px;
+	margin-bottom: 50px;
+	background-color: #aaaaaa;
+}
+
+section {
+	margin: 20px 0;
+}
+
+.header-content {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.space-btw {
+	justify-content: space-between;
+}
+
+.header-content .item {
+	display: flex;
+	flex-direction: column;
+	max-width: 48%;
+	width: 48%;
+	align-items: center;
+	justify-content: center;
+}
+
+ul, li {
+	display: flex;
+	text-align: center;
+}
+
+ul {
+	width: 80%;
+	align-items: center
+}
+
+li {
+	margin-right: 10%;
+}
+
+a {
+	text-decoration: none;
+	color: #cccccc;
+	text-align: inherit;
+}
+
+a:hover {
+	color: #000000;
+}
+
+.logo {
+	display: flex;
+	max-width: 15%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5em;
+}
+
+button {
+	margin: 0 35% 50px 35%;
+	width: 30%;
+	border: 1px solid black;
+	border-radius: 0;
+	padding: 10px 0;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+.header-img {
+	background: url('../img/header-img.png') no-repeat;
+	width: 48%;
+	height: 400px;
+}
+
+.wide-12 {
+	width: 100%;
+}
+
+.wide-6 {
+	width: 49%;
+}
+
+.wide-4 {
+	width: 33%;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+}
+
+footer {
+	margin: 40px 0 20px 0;
+}
+
+.copy {
+	display: block;
+	margin: 100px 0;
+	text-align: center;
+}
