@@ -182,18 +182,6 @@ button {
 	height: 400px;
 }
 
-.wide-12 {
-	width: 100%;
-}
-
-.wide-6 {
-	width: 49%;
-}
-
-.wide-4 {
-	width: 33%;
-}
-
 .banner {
 	display: block;
 	width: 100%;
@@ -266,4 +254,45 @@ h3 {
 	display: block;
 	margin: 100px 0;
 	text-align: center;
+}
+
+.wide-12 {
+	width: 100%;
+}
+
+.wide-6 {
+	width: 49%;
+}
+
+.wide-4 {
+	width: 33%;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.stack-mobile {
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: space-evenly;
+	}
+
+	.service-item {
+		margin-top: 10px;
+	}
+
+	section {
+		margin: 5px 0;
+	}
+
+  .wide-6 {
+		min-width: 100%;
+	}
+	
+	.wide-4 {
+		max-width: 100%;
+	}
 }
