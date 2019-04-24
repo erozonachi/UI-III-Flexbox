@@ -214,11 +214,13 @@ button {
 	font-size: 100%;
 	cursor: pointer;
 }
+
 .bullet {
 	margin-top: 20px;
 	list-style-type: square;
 	list-style-position: inside;
 }
+
 .bullet, .bullet-item {
 	text-align: left;
 }
@@ -242,6 +244,7 @@ footer {
 .about-item img:hover, button:hover {
 	transform: scale(1.1);
 }
+
 h3 {
 	background-color: #444444;
 	color: white;
