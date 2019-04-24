@@ -199,14 +199,22 @@ button {
 	width: 100%;
 }
 
-.service-item {
+.service-item, .about-item {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: stretch;
 	background-color: #eeeeee;
 	border: 1px solid black;
 	padding: 10px;
+}
+
+.service-item {
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.about-item {
+	justify-content: center;
+	align-items: center;
 }
 
 .service-btn {
@@ -227,8 +235,6 @@ button {
 	text-align: left;
 }
 
-
-
 .bullet-item {
 	margin-right: 0;
 	padding: 7px 0;
@@ -236,6 +242,24 @@ button {
 
 footer {
 	margin: 40px 0 20px 0;
+}
+
+.about-info-img {
+	margin-top: 10px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.about-item img:hover, button:hover {
+	transform: scale(1.1);
+}
+h3 {
+	background-color: #444444;
+	color: white;
+	padding: 20px;
+	border-radius: 25%;
+	margin-top: 20px;
 }
 
 .copy {
