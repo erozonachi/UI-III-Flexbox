@@ -64,3 +64,238 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 100px;
+}
+
+.container {
+	display: flex;
+	max-width: 100%;
+	align-content: center;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.stack {
+	flex-direction: column;
+}
+
+nav {
+	justify-content: space-between;
+	padding: 20px 5px;
+	margin-bottom: 50px;
+	background-color: #aaaaaa;
+}
+
+section {
+	margin: 20px 0;
+}
+
+.header-content {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.space-btw {
+	justify-content: space-between;
+}
+
+.header-content .item {
+	display: flex;
+	flex-direction: column;
+	max-width: 48%;
+	width: 48%;
+	align-items: center;
+	justify-content: center;
+}
+
+nav ul, nav ul li {
+	display: flex;
+	text-align: center;
+}
+
+nav ul {
+	width: 80%;
+	align-items: center
+}
+
+nav ul li {
+	margin-right: 10%;
+}
+
+li a {
+	text-decoration: none;
+	color: #cccccc;
+	text-align: inherit;
+}
+
+li a:hover {
+	color: #000000;
+}
+
+.active {
+	color: #666666
+}
+
+nav > a {
+	display: flex;
+	width: 15%;
+}
+
+.logo {
+	display: flex;
+	max-width: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5em;
+}
+
+button {
+	margin: 0 35% 50px 35%;
+	width: 30%;
+	border: 1px solid black;
+	border-radius: 0;
+	padding: 10px 0;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+.header-img {
+	background: url('../img/header-img.png') no-repeat;
+	width: 48%;
+	height: 400px;
+}
+
+.banner {
+	display: block;
+	width: 100%;
+}
+
+.service-item, .about-item {
+	display: flex;
+	flex-direction: column;
+	background-color: #eeeeee;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.service-item {
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.about-item {
+	justify-content: center;
+	align-items: center;
+}
+
+.service-btn {
+	margin: 20px 0;
+	width: 40%;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 10px 0;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+.bullet {
+	margin-top: 20px;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+.bullet, .bullet-item {
+	text-align: left;
+}
+
+.bullet-item {
+	margin-right: 0;
+	padding: 7px 0;
+}
+
+footer {
+	margin: 40px 0 20px 0;
+}
+
+.about-info-img {
+	margin-top: 10px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.about-item img:hover, button:hover {
+	transform: scale(1.1);
+}
+
+h3 {
+	background-color: #444444;
+	color: white;
+	padding: 20px;
+	border-radius: 25%;
+	margin-top: 20px;
+}
+
+.copy {
+	display: block;
+	margin: 100px 0;
+	text-align: center;
+}
+
+.wide-12 {
+	width: 100%;
+}
+
+.wide-6 {
+	width: 49%;
+}
+
+.wide-4 {
+	width: 33%;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.stack-mobile {
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: space-evenly;
+	}
+
+	.service-item {
+		margin-top: 10px;
+	}
+
+	section {
+		margin: 5px 0;
+	}
+
+  .wide-6 {
+		min-width: 100%;
+	}
+	
+	.wide-4 {
+		max-width: 100%;
+	}
+}
